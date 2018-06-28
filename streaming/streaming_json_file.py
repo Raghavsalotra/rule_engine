@@ -8,6 +8,10 @@ class JsonFileReader(object):
         self._get_parsed_data()
 
     def _get_parsed_data(self):
+        """
+        load file and parse json
+        :return: json converted to list of dictionaries
+        """
         try:
             with open(self.file_path) as json_file:
                 self.data = json.load(json_file)

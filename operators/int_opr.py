@@ -1,5 +1,11 @@
 
 def less_than_equals(rule, json_obj):
+    """
+
+    :param rule: list [atr, 'function', 'value']
+    :param json_obj:  dict {'value': '', 'value_type':'', 'signal': ''}
+    :return:
+    """
 
     if float(json_obj['value']) <= float(rule[2]):
         return True
@@ -8,6 +14,12 @@ def less_than_equals(rule, json_obj):
 
 
 def less_than(rule, json_obj):
+    """
+
+        :param rule: list [atr, 'function', 'value']
+        :param json_obj:  dict {'value': '', 'value_type':'', 'signal': ''}
+        :return:
+    """
 
     if float(json_obj['value']) < float(rule[2]):
         return True
@@ -16,6 +28,12 @@ def less_than(rule, json_obj):
 
 
 def greater_than_equals(rule, json_obj):
+    """
+
+        :param rule: list [atr, 'function', 'value']
+        :param json_obj:  dict {'value': '', 'value_type':'', 'signal': ''}
+        :return:
+    """
 
     if float(json_obj['value']) >= float(rule[2]):
         return True
@@ -24,6 +42,12 @@ def greater_than_equals(rule, json_obj):
 
 
 def greater_than(rule, json_obj):
+    """
+
+        :param rule: list [atr, 'function', 'value']
+        :param json_obj:  dict {'value': '', 'value_type':'', 'signal': ''}
+        :return:
+    """
 
     if float(json_obj['value']) > float(rule[2]):
         return True
@@ -32,6 +56,12 @@ def greater_than(rule, json_obj):
 
 
 def equals(rule, json_obj):
+    """
+
+        :param rule: list [atr, 'function', 'value']
+        :param json_obj:  dict {'value': '', 'value_type':'', 'signal': ''}
+        :return:
+    """
     if float(json_obj['value']) == float(rule[2]):
         return True
 
@@ -39,6 +69,12 @@ def equals(rule, json_obj):
 
 
 def not_equals(rule, json_obj):
+    """
+
+        :param rule: list [atr, 'function', 'value']
+        :param json_obj:  dict {'value': '', 'value_type':'', 'signal': ''}
+        :return:
+    """
     if float(json_obj['value']) != float(rule[2]):
         return True
 
